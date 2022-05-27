@@ -1,0 +1,13 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: jimbocoder-kali-linux
+  labels:
+    app: jimbocoder-kali-linux
+spec:
+  containers:
+  - image: jimbocoder/kali-linux:latest
+    command: ["sleep", "86400"]
+    imagePullPolicy: IfNotPresent
+    name: jimbocoder-kali-linux
+  restartPolicy: Never
